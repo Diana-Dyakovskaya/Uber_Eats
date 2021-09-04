@@ -1,6 +1,8 @@
-
-// Определяем переменную "preprocessor"
-let preprocessor = 'styles';
+/*
+  Определяем переменную "preprocessor" -
+  она должна быть, либо less, либо sass - по названию установленного пакета (синтаксиса)
+*/
+const preprocessor = 'sass';
 
 // Определяем константы Gulp
 const { src, dest, parallel, series, watch } = require('gulp');
@@ -96,19 +98,14 @@ function cleandist() {
 }
 
 function startwatch() {
-
   // Выбираем все файлы JS в проекте, а затем исключим с суффиксом .min.js
   watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
-
   // Мониторим файлы препроцессора на изменения
-  watch('app/**/' + preprocessor + '/**/*', styles);
-
+  watch('app/styles/**/*.scss', styles);
   // Мониторим файлы HTML на изменения
   watch('app/**/*.html').on('change', browserSync.reload);
-
   // Мониторим папку-источник изображений и выполняем images(), если есть изменения
   watch('app/images/src/**/*', images);
-
 }
 
 // Экспортируем функцию browsersync() как таск browsersync. Значение после знака = это имеющаяся функция.

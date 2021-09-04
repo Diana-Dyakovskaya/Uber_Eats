@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +11,147 @@
 <header class="header">
   <div class="container">
     <div class="header__container">
-      <a href="#" class="header__logo"><img src=""></a>
+      <a href="#" class="header__logo"><img src="images/dest/header_logo.svg" width="120px" height="13px"
+                                            alt="Uber Eats"></a>
+      <button class="header__button-1 button" type="button">Войти</button>
+      <button class="header__button-2 button" type="button">
+        <img src="images/dest/header_basket.svg" width="19" height="23" alt="Корзина">
+      </button>
     </div>
   </div>
 </header>
-Привет
-
+<main>
+  <section class="home-intro">
+    <div class="container">
+      <h1 class="visually-hidden">Поиск ресторанов и кухонь вашего города</h1>
+      <form class="home-intro__form" action="#" method="post" enctype="multipart/form-data">
+        <input class="home-intro__search" type="search" placeholder="Поиск по ресторанам и кухням">
+      </form>
+      <h2 class="home-intro__title title">Рестораны в Москве</h2>
+      <ul class="home-intro__list">
+        <li class="home-intro__item intro-item">
+          <img class="intro-item__img" src="images/dest/restaurant/item_1.jpg" alt="Макдоналдс">
+          <h2 class="intro-item__title item-title">Макдоналдс — Газетный</h2>
+          <p class="intro-item__subtitle item-subtitle">₽₽ • Бургеры</p>
+          <p class="intro-item__time">25 - 35 мин</p>
+        </li>
+        <li class="home-intro__item intro-item">
+          <img class="intro-item__img" src="images/dest/restaurant/item_2.jpg" alt="DimSum & Co">
+          <h2 class="intro-item__title item-title">DimSum & Co — ЦДМ</h2>
+          <p class="intro-item__subtitle item-subtitle">₽ • Японская • Китайская • Азиатская</p>
+          <p class="intro-item__time">40 - 50 мин</p>
+        </li>
+        <li class="home-intro__item intro-item">
+          <img class="intro-item__img" src="images/dest/restaurant/item_3.jpg" alt="ДвижОК">
+          <h2 class="intro-item__title item-title">ДвижОК — Манежная</h2>
+          <p class="intro-item__subtitle item-subtitle">₽ • Американская • Европейская</p>
+          <p class="intro-item__time">35 - 45 мин</p>
+        </li>
+        <li class="home-intro__item intro-item">
+          <img class="intro-item__img" src="images/dest/restaurant/item_4.jpg" alt="НЯ">
+          <h2 class="intro-item__title item-title">НЯ — NHA</h2>
+          <p class="intro-item__subtitle item-subtitle">₽₽ • Вьетнамская</p>
+          <p class="intro-item__time">30 - 40 мин</p>
+        </li>
+        <li class="home-intro__item intro-item">
+          <img class="intro-item__img" src="images/dest/restaurant/item_5.jpg" alt="Точка Дзы">
+          <h2 class="intro-item__title item-title">Точка Дзы — Цветной</h2>
+          <p class="intro-item__subtitle item-subtitle">₽₽ • Вьетнамская</p>
+          <p class="intro-item__time">40 - 50 мин</p>
+        </li>
+        <li class="home-intro__item intro-item">
+          <img class="intro-item__img" src="images/dest/restaurant/item_6.jpg" alt="Cinnabon">
+          <h2 class="intro-item__title item-title">Cinnabon</h2>
+          <p class="intro-item__subtitle item-subtitle">₽ • Выпечка • Десерты • Капкейки</p>
+          <p class="intro-item__time">25 - 35 мин</p>
+        </li>
+        <li class="home-intro__item intro-item">
+          <img class="intro-item__img" src="images/dest/restaurant/item_7.jpg" alt="PIZZELOVE">
+          <h2 class="intro-item__title item-title">PIZZELOVE</h2>
+          <p class="intro-item__subtitle item-subtitle">₽₽ • Пицца</p>
+          <p class="intro-item__time">15 - 25 мин</p>
+        </li>
+        <li class="home-intro__item intro-item">
+          <img class="intro-item__img" src="images/dest/restaurant/item_8.jpg" alt="Zю кафе">
+          <h2 class="intro-item__title item-title">Zю кафе — Тверская</h2>
+          <p class="intro-item__subtitle item-subtitle">₽₽ • Японская</p>
+          <p class="intro-item__time">25 - 35 мин</p>
+        </li>
+        <li class="home-intro__item intro-item">
+          <img class="intro-item__img" src="images/dest/restaurant/item_9.jpg" alt="Bar BQ Cafe">
+          <h2 class="intro-item__title item-title">Bar BQ Cafe — Манежная</h2>
+          <p class="intro-item__subtitle item-subtitle">₽₽₽ • Европейская</p>
+          <p class="intro-item__time">30 - 40 мин</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__logo footer-logo">
+      <a class="footer-logo__link" href="#">
+        <img class="footer-logo__img" src="images/dest/footer_logo.svg" alt="Uber Eats">
+      </a>
+    </div>
+    <div class="footer__info footer-info">
+      <div class="footer-info__left">
+        <select name="lang" class="footer-info__lang">
+          <option value="english" selected>English</option>
+        </select>
+        <p class="footer-info__name">UberEats</p>
+        <ul class="footer-info__social footer-social">
+          <li class="footer-social__item">
+            <a href="#"><img src="images/dest/facebook.svg alt=" Facebook""></a>
+          </li>
+          <li class="footer-social__item">
+            <a href="#"><img src="images/dest/twitter.svg alt=" Twitter""></a>
+          </li>
+          <li class="footer-social__item">
+            <a href="#"><img src="images/dest/instagram.svg alt=" Instagram""></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer-info__list">
+        <li class="footer-info__item">
+          <a href="#" class="footer-info__link">Об UberEats</a>
+        </li>
+        <li class="footer-info__item">
+          <a href="#" class="footer-info__link">Станьте партнёром по доставке</a>
+        </li>
+        <li class="footer-info__item">
+          <a href="#" class="footer-info__link">Станьте парнёром-рестораном</a>
+        </li>
+      </ul>
+      <ul class="footer-info__list">
+        <li class="footer-info__item">
+          <a href="#" class="footer-info__link">Все города</a>
+        </li>
+        <li class="footer-info__item">
+          <a href="#" class="footer-info__link">Цены</a>
+        </li>
+        <li class="footer-info__item">
+          <a href="#" class="footer-info__link">Помощь</a>
+        </li>
+        <li class="footer-info__item">
+          <a href="#" class="footer-info__link">FAQs</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__app footer-app">
+      <a class="footer-app__link" href="#"><img src="images/dest/app_store.jpg" alt="app_store"></a>
+      <a class="footer-app__link" href="#"><img src="images/dest/google_play.jpg"></a>
+    </div>
+    <div class="footer__basement">
+      <p>© 2017 Uber Technologies Inc.</p>
+      <p>Обработка персональных данных</p>
+      <p>Пользовательское соглашение</p>
+    </div>
+  </div>
+  <button class="button-up" type="button">
+    <img src="images/dest/arrow.svg">
+  </button>
+</footer>
 <script src="js/app.min.js"></script>
 </body>
 </html>

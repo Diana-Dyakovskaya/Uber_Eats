@@ -69,3 +69,34 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
+/*---------utilities-----------*/
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  background-color: #3A68B8;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  line-height: 1.4;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+}

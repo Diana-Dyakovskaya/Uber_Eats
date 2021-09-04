@@ -1,10 +1,11 @@
 {
-  "name": "Uber_Eats",
+  "name": "uber-eats",
   "version": "1.0.0",
-  "description": "Сборка gulp",
+  "private": true,
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "author": "Diana",
   "license": "ISC",

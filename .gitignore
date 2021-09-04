@@ -9,7 +9,9 @@ node_modules/
 
 #Project generated folders
 .tmp
-dist
+dist/
+log/
+app/images/dest
 
 #Yarn
 .yarn/*

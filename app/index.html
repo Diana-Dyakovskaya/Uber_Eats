@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/app.min.css">
   <title>Uber Eats</title>
 </head>
@@ -11,8 +14,9 @@
 <header class="header">
   <div class="container">
     <div class="header__container">
-      <a href="#" class="header__logo"><img src="images/dest/header_logo.svg" width="120px" height="13px"
-                                            alt="Uber Eats"></a>
+      <a href="#" class="header__logo">
+        <img src="images/dest/header_logo.svg" width="120px" height="13px" alt="Uber Eats">
+      </a>
       <button class="header__button-1 button" type="button">Войти</button>
       <button class="header__button-2 button" type="button">
         <img src="images/dest/header_basket.svg" width="19" height="23" alt="Корзина">
@@ -27,7 +31,7 @@
       <form class="home-intro__form" action="#" method="post" enctype="multipart/form-data">
         <input class="home-intro__search" type="search" placeholder="Поиск по ресторанам и кухням">
       </form>
-      <h2 class="home-intro__title title">Рестораны в Москве</h2>
+      <h2 class="home-intro__title title-list">Рестораны в Москве</h2>
       <ul class="home-intro__list">
         <li class="home-intro__item intro-item">
           <img class="intro-item__img" src="images/dest/stores/item_1.jpg" alt="Макдоналдс">
@@ -97,18 +101,18 @@
     <div class="footer__info footer-info">
       <div class="footer-info__left">
         <select name="lang" class="footer-info__lang">
-          <option value="english" selected>English</option>
+          <option value="rus" selected>Русский</option>
         </select>
-        <p class="footer-info__name">UberEats</p>
+        <p class="footer-info__name"><span class="green">#</span>UberEats</p>
         <ul class="footer-info__social footer-social">
           <li class="footer-social__item">
-            <a href="#"><img src="images/dest/facebook.svg alt=" Facebook""></a>
+            <a href="#"><img src="images/dest/facebook.svg" alt="Facebook" width="24" height="24"></a>
           </li>
           <li class="footer-social__item">
-            <a href="#"><img src="images/dest/twitter.svg alt=" Twitter""></a>
+            <a href="#"><img src="images/dest/twitter.svg" alt="Twitter" width="24" height="24"></a>
           </li>
           <li class="footer-social__item">
-            <a href="#"><img src="images/dest/instagram.svg alt=" Instagram""></a>
+            <a href="#"><img src="images/dest/instagram.svg" alt="Instagram" width="24" height="24"></a>
           </li>
         </ul>
       </div>
@@ -139,8 +143,8 @@
       </ul>
     </div>
     <div class="footer__app footer-app">
-      <a class="footer-app__link" href="#"><img src="images/dest/app_store.jpg" alt="app_store"></a>
-      <a class="footer-app__link" href="#"><img src="images/dest/google_play.jpg"></a>
+      <a class="footer-app__link" href="#"><img src="images/dest/app_store.png" alt="app store"></a>
+      <a class="footer-app__link" href="#"><img src="images/dest/google_play.png" alt="google play"></a>
     </div>
     <div class="footer__basement">
       <p>© 2017 Uber Technologies Inc.</p>

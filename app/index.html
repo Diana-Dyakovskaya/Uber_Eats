@@ -25,69 +25,156 @@
   </div>
 </header>
 <main>
-  <section class="home-intro">
+  <section class="home-search">
+    <div class="container">
+      <form class="home-search__form form" action="#" method="post" enctype="multipart/form-data">
+        <p class="form__row">
+          <input class="form__search" type="search" placeholder="Поиск по ресторанам и кухням">
+        </p>
+      </form>
+    </div>
+  </section>
+  <section class="home-stores stores">
     <div class="container">
       <h1 class="visually-hidden">Доставка еды из ресторанов и кухонь вашего города</h1>
-      <form class="home-intro__form" action="#" method="post" enctype="multipart/form-data">
-        <input class="home-intro__search" type="search" placeholder="Поиск по ресторанам и кухням">
-      </form>
-      <h2 class="home-intro__title title-list">Рестораны в Москве</h2>
-      <ul class="home-intro__list">
-        <li class="home-intro__item intro-item">
-          <a href="#"><img class="intro-item__img" src="images/dest/stores/item_1.jpg" alt="Макдоналдс"></a>
-          <a href="#"><h3 class="intro-item__name item-name">Макдоналдс — Газетный</h3></a>
-          <p class="intro-item__kitchen item-kitchen">₽₽ • Бургеры</p>
-          <p class="intro-item__time item-time">25 - 35 мин</p>
-        </li>
-        <li class="home-intro__item intro-item">
-          <a href="#"><img class="intro-item__img" src="images/dest/stores/item_2.jpg" alt="DimSum & Co"></a>
-          <a href="#"><h3 class="intro-item__name item-name">DimSum & Co — ЦДМ</h3></a>
-          <p class="intro-item__kitchen item-kitchen">₽ • Японская • Китайская • Азиатская</p>
-          <p class="intro-item__time item-time">40 - 50 мин</p>
-        </li>
-        <li class="home-intro__item intro-item">
-          <a href="pushkin.html"><img class="intro-item__img" src="images/dest/stores/item_3.jpg" alt="ДвижОК"></a>
-          <a href="pushkin.html"><h3 class="intro-item__name item-name">Трактир «Пушкин»</h3></a>
-          <p class="intro-item__kitchen item-kitchen">₽₽₽ • Европейская</p>
-          <p class="intro-item__time item-time">40 - 50 мин</p>
-        </li>
-        <li class="home-intro__item intro-item">
-          <a href="#"><img class="intro-item__img" src="images/dest/stores/item_4.jpg" alt="НЯ"></a>
-          <a href="#"><h3 class="intro-item__name item-name">НЯ — NHA</h3></a>
-          <p class="intro-item__kitchen item-kitchen">₽₽ • Вьетнамская</p>
-          <p class="intro-item__time item-time">30 - 40 мин</p>
-        </li>
-        <li class="home-intro__item intro-item">
-          <a href="#"><img class="intro-item__img" src="images/dest/stores/item_5.jpg" alt="Точка Дзы"></a>
-          <a href="#"><h3 class="intro-item__name item-name">Точка Дзы — Цветной</h3></a>
-          <p class="intro-item__kitchen item-kitchen">₽₽ • Вьетнамская</p>
-          <p class="intro-item__time item-time">40 - 50 мин</p>
-        </li>
-        <li class="home-intro__item intro-item">
-          <a href="#"><img class="intro-item__img" src="images/dest/stores/item_6.jpg" alt="Cinnabon"></a>
-          <a href="#"><h3 class="intro-item__name item-name">Cinnabon</h3></a>
-          <p class="intro-item__kitchen item-kitchen">₽ • Выпечка • Десерты • Капкейки</p>
-          <p class="intro-item__time item-time">25 - 35 мин</p>
-        </li>
-        <li class="home-intro__item intro-item">
-          <a href="#"><img class="intro-item__img" src="images/dest/stores/item_7.jpg" alt="PIZZELOVE"></a>
-          <a href="#"><h3 class="intro-item__name item-name">PIZZELOVE</h3></a>
-          <p class="intro-item__kitchen item-kitchen">₽₽ • Пицца</p>
-          <p class="intro-item__time item-time">15 - 25 мин</p>
-        </li>
-        <li class="home-intro__item intro-item">
-          <a href="#"><img class="intro-item__img" src="images/dest/stores/item_8.jpg" alt="Zю кафе"></a>
-          <a href="#"><h3 class="intro-item__name item-name">Zю кафе — Тверская</h3></a>
-          <p class="intro-item__kitchen item-kitchen">₽₽ • Японская</p>
-          <p class="intro-item__time item-time">25 - 35 мин</p>
-        </li>
-        <li class="home-intro__item intro-item">
-          <a href="#"><img class="intro-item__img" src="images/dest/stores/item_9.jpg" alt="Bar BQ Cafe"></a>
-          <a href="#"><h3 class="intro-item__name item-name">Bar BQ Cafe — Манежная</h3></a>
-          <p class="intro-item__kitchen item-kitchen">₽₽₽ • Европейская</p>
-          <p class="intro-item__time item-time">30 - 40 мин</p>
-        </li>
-      </ul>
+      <h2 class="stores__title title-list">Рестораны в Москве</h2>
+      <div class="stores__wrapper">
+        <article class="stores__item stores-item">
+          <div class="stores-item__image">
+            <a href="restaurant.html" class="stores-item__link">
+              <img class="stores-item__img" src="images/dest/stores/item_1.jpg" alt="Макдоналдс">
+            </a>
+          </div>
+          <h3 class="stores-item__name item-name">
+            <a href="restaurant.html" class="stores-item__link">Макдоналдс — Газетный</a>
+          </h3>
+          <p class="stores-item__description">
+            <span class="stores-item__cost">₽₽</span>
+            <span class="stores-item__kitchen">Бургеры</span>
+          </p>
+          <p class="stores-item__time item-time">25 - 35 мин</p>
+        </article>
+        <article class="stores__item stores-item">
+          <div class="stores-item__image">
+            <a href="restaurant.html" class="stores-item__link">
+              <img class="stores-item__img" src="images/dest/stores/item_2.jpg" alt="Макдоналдс">
+            </a>
+          </div>
+          <h3 class="stores-item__name item-name">
+            <a href="restaurant.html" class="stores-item__link">DimSum & Co — ЦДМ</a>
+          </h3>
+          <p class="stores-item__description">
+            <span class="stores-item__cost">₽</span>
+            <span class="stores-item__kitchen">Японская • Китайская • Азиатская</span>
+          </p>
+          <p class="stores-item__time item-time">40 - 50 мин</p>
+        </article>
+        <article class="stores__item stores-item">
+          <div class="stores-item__image">
+            <a href="restaurant.html" class="stores-item__link">
+              <img class="stores-item__img" src="images/dest/stores/item_3.jpg" alt="Макдоналдс">
+            </a>
+          </div>
+          <h3 class="stores-item__name item-name">
+            <a href="restaurant.html" class="stores-item__link">ДвижОК — Манежная</a>
+          </h3>
+          <p class="stores-item__description">
+            <span class="stores-item__cost">₽</span>
+            <span class="stores-item__kitchen">Американская • Европейская</span>
+          </p>
+          <p class="stores-item__time item-time">35 - 45 мин</p>
+        </article>
+        <article class="stores__item stores-item">
+          <div class="stores-item__image">
+            <a href="restaurant.html" class="stores-item__link">
+              <img class="stores-item__img" src="images/dest/stores/item_4.jpg" alt="Макдоналдс">
+            </a>
+          </div>
+          <h3 class="stores-item__name item-name">
+            <a href="restaurant.html" class="stores-item__link">НЯ — NHA</a>
+          </h3>
+          <p class="stores-item__description">
+            <span class="stores-item__cost">₽₽</span>
+            <span class="stores-item__kitchen">Вьетнамская</span>
+          </p>
+          <p class="stores-item__time item-time">30 - 40 мин</p>
+        </article>
+        <article class="stores__item stores-item">
+          <div class="stores-item__image">
+            <a href="restaurant.html" class="stores-item__link">
+              <img class="stores-item__img" src="images/dest/stores/item_5.jpg" alt="Макдоналдс">
+            </a>
+          </div>
+          <h3 class="stores-item__name item-name">
+            <a href="restaurant.html" class="stores-item__link">Точка Дзы — Цветной</a>
+          </h3>
+          <p class="stores-item__description">
+            <span class="stores-item__cost">₽₽</span>
+            <span class="stores-item__kitchen">Вьетнамская</span>
+          </p>
+          <p class="stores-item__time item-time">40 - 50 мин</p>
+        </article>
+        <article class="stores__item stores-item">
+          <div class="stores-item__image">
+            <a href="restaurant.html" class="stores-item__link">
+              <img class="stores-item__img" src="images/dest/stores/item_6.jpg" alt="Макдоналдс">
+            </a>
+          </div>
+          <h3 class="stores-item__name item-name">
+            <a href="restaurant.html" class="stores-item__link">Cinnabon</a>
+          </h3>
+          <p class="stores-item__description">
+            <span class="stores-item__cost">₽</span>
+            <span class="stores-item__kitchen">Выпечка • Десерты • Капкейки</span>
+          </p>
+          <p class="stores-item__time item-time">25 - 35 мин</p>
+        </article>
+        <article class="stores__item stores-item">
+          <div class="stores-item__image">
+            <a href="restaurant.html" class="stores-item__link">
+              <img class="stores-item__img" src="images/dest/stores/item_7.jpg" alt="Макдоналдс">
+            </a>
+          </div>
+          <h3 class="stores-item__name item-name">
+            <a href="restaurant.html" class="stores-item__link">PIZZELOVE</a>
+          </h3>
+          <p class="stores-item__description">
+            <span class="stores-item__cost">₽₽</span>
+            <span class="stores-item__kitchen">Пицца</span>
+          </p>
+          <p class="stores-item__time item-time">15 - 25 мин</p>
+        </article>
+        <article class="stores__item stores-item">
+          <div class="stores-item__image">
+            <a href="restaurant.html" class="stores-item__link">
+              <img class="stores-item__img" src="images/dest/stores/item_8.jpg" alt="Макдоналдс">
+            </a>
+          </div>
+          <h3 class="stores-item__name item-name">
+            <a href="restaurant.html" class="stores-item__link">Zю кафе — Тверская</a>
+          </h3>
+          <p class="stores-item__description">
+            <span class="stores-item__cost">₽₽</span>
+            <span class="stores-item__kitchen">Японская</span>
+          </p>
+          <p class="stores-item__time item-time">25 - 35 мин</p>
+        </article>
+        <article class="stores__item stores-item">
+          <div class="stores-item__image">
+            <a href="restaurant.html" class="stores-item__link">
+              <img class="stores-item__img" src="images/dest/stores/item_9.jpg" alt="Макдоналдс">
+            </a>
+          </div>
+          <h3 class="stores-item__name item-name">
+            <a href="restaurant.html" class="stores-item__link">Bar BQ Cafe — Манежная</a>
+          </h3>
+          <p class="stores-item__description">
+            <span class="stores-item__cost">₽₽₽</span>
+            <span class="stores-item__kitchen">Европейская</span>
+          </p>
+          <p class="stores-item__time item-time">30 - 40 мин</p>
+        </article>
+      </div>
     </div>
   </section>
 </main>

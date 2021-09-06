@@ -445,11 +445,15 @@ input[type="search"] {
 }
 
 @media (max-width: 479px) {
+  .container-center {
+    max-width: 308px;
+    margin: 0 auto;
+  }
   .cafe-intro__item {
     padding: 25px;
     position: absolute;
-    top: -30vh;
-    left: 8px;
+    top: -25vh;
+    left: 7%;
     z-index: 33;
     background-color: #FFFFFF;
     max-width: 308px;

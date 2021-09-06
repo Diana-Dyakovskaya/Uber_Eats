@@ -172,6 +172,7 @@ input[type="search"] {
 }
 
 .intro-item__img {
+  width: 100%;
   max-height: 256px;
   object-fit: cover;
 }
@@ -179,6 +180,7 @@ input[type="search"] {
 .intro-item__name {
   margin-top: 15px;
   flex: 1 1 auto;
+  color: #1D1D1D;
 }
 
 .intro-item__kitchen {
@@ -497,7 +499,9 @@ input[type="search"] {
 }
 
 .menu-item__description {
-  padding: 15px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 5px;
   display: flex;
   flex-direction: column;
 }
@@ -523,6 +527,7 @@ input[type="search"] {
   width: 170px;
   height: 160px;
   margin-left: auto;
+  flex-shrink: 0;
 }
 
 .menu-item__img {
@@ -565,10 +570,14 @@ input[type="search"] {
     margin-left: auto;
     margin-right: auto;
   }
+  .menu-item__description {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   .menu-item__card {
     width: 102px;
     height: 102px;
-    flex-shrink: 0;
   }
   .cafe-menu__list {
     margin-top: 40px;

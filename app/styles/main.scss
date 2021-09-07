@@ -255,6 +255,7 @@ button:hover, a:hover {
 /*---------footer-----------*/
 
 .footer {
+  position: relative;
   background-color: #262626;
   color: #FFFFFF;
   border-top: 1px solid transparent;
@@ -364,16 +365,11 @@ button:hover, a:hover {
     padding-left: 10px;
   }
 }
-
-.footer__container {
-  position: relative;
-}
-
 .button-up {
   position: absolute;
   width: 82px;
   height: 82px;
-  right: -72px;
+  right: 16px;
   bottom: 22px;
   background: #59BD5A;
   border-radius: 2px;
@@ -388,6 +384,9 @@ button:hover, a:hover {
   }
   .footer-info__item:not(:first-child) {
     margin-top: 15px;
+  }
+  .footer__container {
+    position: relative;
   }
   .button-up {
     right: 12px;
@@ -465,9 +464,11 @@ button:hover, a:hover {
     vertical-align: center;
   }
 }
-.container {
+
+.container-position {
   position: relative;
 }
+
 .cafe-intro__item {
   padding: 38px 29px 38px 38px;
   position: absolute;
@@ -649,10 +650,6 @@ button:hover, a:hover {
     grid-template-columns: 1fr;
     row-gap: 30px;
   }
-  .menu-item__select {
-    border-left: none;
-    border-right: none;
-  }
   .menu-item__description {
     padding-left: 22px;
   }
@@ -686,6 +683,10 @@ button:hover, a:hover {
     margin-top: 12px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .menu-item__select {
+    border-left: none;
+    border-right: none;
   }
   .menu-item__description {
     padding-top: 0;
